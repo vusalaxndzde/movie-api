@@ -4,7 +4,6 @@ import com.vusalaxndzde.movieapi.dto.ReviewDto;
 import com.vusalaxndzde.movieapi.model.Review;
 import com.vusalaxndzde.movieapi.service.inter.ReviewService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
