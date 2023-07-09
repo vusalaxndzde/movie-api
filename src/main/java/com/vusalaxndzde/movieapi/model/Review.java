@@ -1,4 +1,4 @@
-package com.vusalaxndzde.movieapi;
+package com.vusalaxndzde.movieapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
