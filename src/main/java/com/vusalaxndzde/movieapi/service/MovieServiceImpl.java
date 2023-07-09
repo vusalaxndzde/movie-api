@@ -4,6 +4,7 @@ import com.vusalaxndzde.movieapi.model.Movie;
 import com.vusalaxndzde.movieapi.repository.MovieRepository;
 import com.vusalaxndzde.movieapi.service.inter.MovieService;
 import lombok.RequiredArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,11 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public List<Movie> findAll() {
         return movieRepository.findAll();
+    }
+
+    @Override
+    public Movie findMovieByImdbId(String imdbId) {
+        return movieRepository.findMovieByImdbId(imdbId).orElseThrow();
     }
 
 }
